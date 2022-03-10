@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido(a) Pastelero(a)</title>
+    <link rel="stylesheet" href="/styles/styles_admon.css" />
+    <script src="https://kit.fontawesome.com/1772b8545b.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <!-- SideBar Menú -->
+        <!-- Logo -->
+        <div class="mora-sidebar">
+            <div class="mora-logo-content">
+                <div class="mora-logo">
+                    <img src="/assets/img/png/logo_mora_pastel.png" alt="mora-logo">
+                    <!--<div class="mora-logo-name">Mora Pastel</div>-->
+                </div>
+                <i class="fa-solid fa-bars" id="mora-btn-menu"></i>
+            </div>
+        <!-- End Logo -->
+            <!-- Lista -->
+            <ul class="mora-nav-list">
+                <li> <!-- Dashboard -->
+                    <a href = "#">
+                        <i class="fa-solid fa-grip"></i>
+                        <span class="mora-link-name">Dashboard</span>
+                    </a>
+                    <span class="mora-tooltip">Dashboard</span>
+                </li>
+                <li> <!-- Usuario -->
+                    <a href = "#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="mora-link-name">Usuario</span>
+                    </a>
+                    <span class="mora-tooltip">Usuario</span>
+                </li>
+                <li> <!-- Mensajes -->
+                    <a href = "#">
+                        <i class="fa-solid fa-message"></i>
+                        <span class="mora-link-name">Mensajes</span>
+                    </a>
+                    <span class="mora-tooltip">Mensajes</span>
+                </li>
+                <li> <!-- Estadisticas -->
+                    <a href = "#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span class="mora-link-name">Estadisticas</span>
+                    </a>
+                    <span class="mora-tooltip">Estadisticas</span>
+                </li>
+                <li> <!-- Archivos -->
+                    <a href = "#">
+                        <i class="fa-solid fa-folder"></i>
+                        <span class="mora-link-name">Archivos</span>
+                    </a>
+                    <span class="mora-tooltip">Archivos</span>
+                </li>
+                <li> <!-- Pedidos -->
+                    <a href = "#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="mora-link-name">Pedidos</span>
+                    </a>
+                    <span class="mora-tooltip">Pedidos</span>
+                </li>
+                <li> <!-- Favoritos -->
+                    <a href = "#">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="mora-link-name">Favoritos</span>
+                    </a>
+                    <span class="mora-tooltip">Favoritos</span>
+                </li>
+                <li> <!-- Configuraciones -->
+                    <a href = "#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="mora-link-name">Configuración</span>
+                    </a>
+                    <span class="mora-tooltip">Configuración</span>
+                </li>
+            </ul>
+            <div class="mora-profile">
+                <div class="mora-user-profile">
+                    <div class="mora-profile-details">
+                        <img src="/assets/img/jpg/profile.jpg" alt="user-profile">
+                        <div class="mora-job-details">
+                            <div class="mora-user-name">MGonzález</div>
+                            <div class="mora-user-job">Fullstack Developer</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-from-bracket" id="mora-btn-logout"></i>
+                </div>
+            </div>
+            <!-- EndLista -->
+        </div>
+        <!-- Main -->
+        <main class="mora-main-content">
+            <section class="mora-main-title-content">
+                <div class="text">
+                    <span class="mora-txt-delight">Despacho</span>
+                    <span>Pedidos</span>
+                </div>
+                <div class="mora-order-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="mora-txt-busqueda" type="text" placeholder = "Buscar..." />
+                </div>
+            </section>
+            <ul class="mora-order-cards">
+                <li>
+                    <a href="" class="mora-order-card">
+                        <img src="/assets/img/jpg/special-k.jpg" class="mora-card-img" alt="" />
+                        <div class="mora-card-overlay">
+                            <div class="mora-card-header">
+                                <svg class="mora-card-arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                                <div class="mora-card-header-text">
+                                    <h3 class="mora-card-title">Special - K</h3>            
+                                    <div class="mora-card-footer">
+                                        <div>
+                                            <i class="fa-solid fa-users"></i>
+                                            <span class="mora-card-status">4 Personas</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-clock"></i>
+                                            <span class="mora-card-status">Hace una hora</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="mora-order-card">
+                        <img src="/assets/img/jpg/mora-pastel.jpg" class="mora-card-img" alt="" />
+                        <div class="mora-card-overlay">
+                            <div class="mora-card-header active" >
+                                <svg class="mora-card-arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                                <div class="mora-card-header-text">
+                                    <h3 class="mora-card-title">Mora Pastel</h3>            
+                                    <div class="mora-card-footer">
+                                        <div>
+                                            <i class="fa-solid fa-users"></i>
+                                            <span class="mora-card-status">10 Personas</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-clock"></i>
+                                            <span class="mora-card-status">02 de Marzo 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="mora-order-card">
+                        <img src="/assets/img/jpg/mora-mix.jpg" class="mora-card-img" alt="" />
+                        <div class="mora-card-overlay">
+                            <div class="mora-card-header">
+                                <svg class="mora-card-arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                                <div class="mora-card-header-text">
+                                    <h3 class="mora-card-title">Mora Mix</h3>            
+                                    <div class="mora-card-footer">
+                                        <div>
+                                            <i class="fa-solid fa-users"></i>
+                                            <span class="mora-card-status">4 Personas</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-clock"></i>
+                                            <span class="mora-card-status">3 de Marzo 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="mora-order-card">
+                        <img src="/assets/img/jpg/mora-amor.jpg" class="mora-card-img" alt="" />
+                        <div class="mora-card-overlay">
+                            <div class="mora-card-header">
+                                <svg class="mora-card-arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                                <div class="mora-card-header-text">
+                                    <h3 class="mora-card-title">Mora de Amor</h3>            
+                                    <div class="mora-card-footer">
+                                        <div>
+                                            <i class="fa-solid fa-users"></i>
+                                            <span class="mora-card-status">8 Personas</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-clock"></i>
+                                            <span class="mora-card-status">4 de Marzo 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <!-- Section Orders -->
+        <section>
+            <div class="mora-right-side-bar">
+                <header>
+                    <div class="mora-nav-order">
+                        <div class="mora-user-profile-order">
+                            <div class="mora-user-profile-details">
+                                <div class="text">
+                                    <span class="mora-txt-delight">Información</span>
+                                </div>
+                                <div class="mora-user-profile-data">
+                                    <img src="/assets/img/jpg/hiisabel-profile.jpg" alt="user-profile">
+                                    <div class="mora-user-order-details text">
+                                        <p class="mora-user-name">HiisabelMora</p>
+                                        <p>
+                                            <a href="https://goo.gl/maps/9Jy8S72UwJQFcs597" target="blank">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <span class="mora-txt-delight">
+                                                    Av. 3, Centro, 94500 Córdoba, Ver.
+                                                </span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main class="mora-order-main">
+                    <div class="text">
+                        <div>
+                            <span class="mora-txt-delight">Instrucciones </span>
+                            especiales:
+                            <div class="mora-txt-instructions" >
+                                Quitar algunas moras para formar la palabra "Felicidades".
+                            </div>
+                        </div>
+                        <div>
+                            <span class="mora-txt-delight">Listado</span>
+                            Ingredientes
+                            <div class="mora-nav-ingredients">
+                                <ul>
+                                    <li>
+                                        <div class="mora-card-ingredient">
+                                            <div class="mora-card-ingredient-header">
+                                                <div class="mora-card-ingredient-title">
+                                                    50 moras azules
+                                                </div>
+                                                <div class="mora-card-footer-ingredient">
+                                                    <div class="mora-icon-check">
+                                                        <span class="mora-icon-check">
+                                                            <i class="fa-solid fa-circle-check"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mora-card-ingredient-stock">
+                                                (200 disponibles)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="mora-card-ingredient">
+                                            <div class="mora-card-ingredient-header">
+                                                <div class="mora-card-ingredient-title">
+                                                    5 Huevos
+                                                </div>
+                                                <div class="mora-card-footer-ingredient">
+                                                    <div class="mora-icon-check">
+                                                        <span class="mora-icon-check">
+                                                            <i class="fa-solid fa-circle-check"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mora-card-ingredient-stock">
+                                                (10 disponibles)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="mora-card-ingredient">
+                                            <div class="mora-card-ingredient-header">
+                                                <div class="mora-card-ingredient-title">
+                                                    1 taza de azúcar (200 gr)
+                                                </div>
+                                                <div class="mora-card-footer-ingredient">
+                                                    <div class="mora-icon-check">
+                                                        <span class="mora-icon-check">
+                                                            <i class="fa-solid fa-circle-check"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mora-card-ingredient-stock">
+                                                (6,000 gr disponibles)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="mora-card-ingredient">
+                                            <div class="mora-card-ingredient-header">
+                                                <div class="mora-card-ingredient-title">
+                                                    1/2 taza de aceite (1 oz.)
+                                                </div>
+                                                <div class="mora-card-footer-ingredient">
+                                                    <div class="mora-icon-check">
+                                                        <span class="mora-icon-check">
+                                                            <i class="fa-solid fa-circle-xmark"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mora-card-ingredient-stock">
+                                                (Sin stock)
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="mora-order-summary">
+                    <form id="mora-order-form">
+                        <input class="mora-btn-cancel text" type="button" value="Cancelar">
+                        <input class="mora-btn-send text"   type="button" value="Enviar">
+                    </form>
+                </footer>
+            </div>
+        </section>
+        <script src="/js/dashboard_admin/main.js"></script>
+    </body>
+</html>
