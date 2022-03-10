@@ -1,0 +1,123 @@
+/*
+    WebPage General
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #353836;
+    color: white;
+    font-family: sans-serif
+}
+header a {
+    text-decoration: none;
+}
+header {
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top 0;
+}
+#mora-logo {
+    display:flex;
+    align-items:center;
+}
+ul{
+    list-style: none;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+ul a{
+    color:white;
+}
+ul li{
+    padding:5px;
+    margin-left:10px;
+}
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#mora-login,#mora-signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+#mora-login {
+    border: 1px solid #498afb;
+}
+#mora-login a{
+    color: #ff3860;
+}
+#mora-signup {
+    border: 1px solid #ff3860;
+}
+#mora-signup a{
+    color: #498afb;
+}
+
+@media only screen and (max-width: 600px){
+    header nav {
+        display: none;
+    }
+    #mora-hamburguer-icon{
+        display:block !important;
+    }
+}
+/*
+    Main Section
+*/
+main {
+    padding-top: 50px;
+}
+/*
+    Menú mobile
+*/
+#mora-hamburguer-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#mora-hamburguer-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open-menu .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open-menu .bar2 {
+    opacity: 0;
+}
+.open-menu .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.mora-mobile-menu{
+    display:none;
+    position:absolute;
+    top: 50px;
+    left: 0px;
+    height: calc(100vh-50px);
+    width:100%;
+}
+.open-menu .mora-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mora-mobile-menu li {
+    margin-bottom: 10px;
+}
